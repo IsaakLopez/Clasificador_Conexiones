@@ -1,0 +1,49 @@
+{
+  "nombre_modelo": "Clasificador de conexiones de red - SVM RBF",
+  "archivo_modelo": "modelo_svm_rbf.pkl",
+  "fecha_entrenamiento": "2026-11-12T00:14:09",
+  "variables_entrada": [
+    "trafico_mbps",
+    "latencia_ms"
+  ],
+  "unidades": {
+    "trafico_mbps": "Mbps",
+    "latencia_ms": "ms"
+  },
+  "clases": {
+    "0": "normal",
+    "1": "sospechosa"
+  },
+  "kernel": "rbf",
+  "hiperparametros": {
+    "C": 1.0,
+    "gamma": 1.0
+  },
+  "vectores_soporte": 76,
+  "metricas_prueba": {
+    "accuracy": 0.97,
+    "precision": 0.9796,
+    "recall": 0.96,
+    "f1": 0.9697
+  },
+  "f1_validacion_cruzada": 0.9693,
+  "rango_entrenamiento": {
+    "trafico_mbps": {
+      "min": 26.32,
+      "max": 106.97
+    },
+    "latencia_ms": {
+      "min": 37.55,
+      "max": 103.21
+    }
+  },
+  "n_registros_entrenamiento": 400,
+  "semilla": 240,
+  "versiones": {
+    "python": "3.13.18",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3"
+  }
+}
